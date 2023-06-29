@@ -4,10 +4,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eventhandlingpressbutton.KeyPressEventController">
    <children>
-      <ImageView fitHeight="199.0" fitWidth="180.0" layoutX="204.0" layoutY="101.0">
+      <ImageView fx:id="catPic" fitHeight="199.0" fitWidth="180.0" layoutX="210.0" layoutY="101.0" onKeyPressed="#handleKeyPressEvent">
          <image>
             <Image url="@CatPic.png" />
          </image>
