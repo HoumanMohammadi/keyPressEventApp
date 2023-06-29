@@ -43,18 +43,18 @@ public class KeyPressEventController {
     public void handleKeyPressEvent(KeyEvent keyEvent) {
         if (!collisionDetection()){
             switch (keyEvent.getCode()) {
-                case W:
+                case W, UP:
                     catPic.setY(catPic.getY()+(-5));
                     System.out.println((anchorPane.getHeight()-catPic.getFitHeight())/2);
                     System.out.println(Math.abs(catPic.getY()));
                     break;
-                case S:
+                case S, DOWN:
                     catPic.setY(catPic.getY()-(-5));
                     break;
-                case D:
+                case D, RIGHT:
                     catPic.setX(catPic.getX()-(-5));
                     break;
-                case A:
+                case A, LEFT:
                     catPic.setX(catPic.getX()+(-5));
                     break;
             }
